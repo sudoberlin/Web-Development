@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Bootcamp</title>\
+    <link rel="stylesheet" href="wdb.css">
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>
+                    &diamondsuit; Web Development Bootcamp &diams;
+                </h1>
+                <p>Colt's Web Development course</p>
+            </header>
+        </section>
+            <h2>Sections</h2>
+            <ul>
+                <li><button><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML</a></button> </li>
+                <li><button><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS </a> </button></li>
+                <li>JavaScript</li>
+                <li>Node</li>
+                <li>Other</li>
+            </ul>
+        
+    </main>
+
+
+    <main>
+        <h2>Tables in HTML</h2>
+        <table>
+            <thead>
+                <tr>
+                  <th>main tools to use in table</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>td - to create individual data or cell</td>
+                </tr>
+                <tr>
+                    <td>tr - to create row or to split data in columns</td>
+                </tr>
+                <tr>
+                    <td>th - to create the header of the column values</td>
+                </tr>
+                <tr>
+                    <td>thead - is to indicate the head of the table - nothing will change</td>
+                </tr>
+                <tr>
+                    <td>tbody- is to indicate the body the table- nothing will change but nice to have semanicity</td>
+                </tr>
+                <tr>
+                    <td>tfoot - when we have footer or conclusion at the end of the table e.g. total or sum.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <h3> colspan and rowspan</h3>
+    <p>colspan - used when there are columns under one column e.g. - weight -- lb and kg e.g. -- <th rowspan="2"> weight</th> like this.</p>
+    <p>rowspan - used when there are particular rows to define or same as above for colspan eg. <th colspan="2"> weight. and then create a di</p>
+    <main>
+        <h2>Learned So far</h2>
+        <p>code entities, images inserstion using src, nav for navigation links,
+            href - hypertext reference, anchors to include any website, ordered (ol)and unordered(ul) lists and list items(li) </p>
+    </main>
+
+
+
+    <main>
+        <h2>
+            Form
+        </h2>
+        <p>
+            <ul>
+                <li>The form element represents a document section containing
+                    interactive controls for submitting information.
+                </li>
+                <li>The action attribute specifies WHERE the form data should be sent.</li>
+                <li>The method attribute specifies which HTTP method should be used</li>
+            </ul>
+        </p>
+    </main>
+
+<h2>forms demo</h2>
+    <p> forms are created to enter the values and type where we can choose different
+        types of format e.g. email, text, date, time, year  </p>
+        <p>
+            we can use different types of label and input formats see html code file.
+        </p>
+        <h3>Form</h3>
+<form action="https://www.google.com">
+    <p>
+    <label for="username"> Enter an username: </label>
+    <input type="text" placeholder="username" id="username" name="name">
+    </p>
+    
+    <p>
+    <label for="email"> Enter an email: </label>
+    <input type="email" placeholder="email" id="email" name="email">
+    </p>
+
+    <p>
+    <label for="password">Enter a Password<input type="password" placeholder="password" id="password"></label>
+    </p>
+
+    <button>enter</button>
+</form>
+<button>submit</button>
+
+<h3>Buttons Behaviour</h3>
+<p>if we use button inside the form it's default work is to submit to the form main website that we provide in form section.</p>
+<p>but if we use buuton attribute outside the form it behaves normally as a pushing button it won't take us anywhere as it acts in the default format.</p>
+<p>we can also define prebuilt function inside a button as type="button" to show that it's just a button. </p>
+
+<h3>name attribute</h3>
+<p>name are used in input section as name="email or anything" to define any given query we are going to ask from the our domain that we define in the form section.</p>
+<p> name is an important attribute while making any qurey in the website.</p>
+
+<p>To create a search bar for any server just know the domain name to search e.g. for google - "https://www.google.com/search" and check for the qurey name in that seach sever as "q" in the google,
+    and then specify the same name under input in your HTML file to search that browser.
+    <p>we don't need to specifically define search button in HTML because it's default is when we hit enter it willl automatically search for that query. But nice to have a button.</p>
+</p>
+<p> we can define any search bar using this</p>
+
+<h3>Search Google</h3>
+<form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button>Search Google</button>
+</form>
+
+<h3>Search Yotube</h3>
+<form action="https://www.youtube.com/results">
+    <input type="text" name="search_query">
+    <button>search youtube</button>
+</form>
+
+<h3>Search Reddit</h3>
+<form action="https://www.reddit.com/search">
+    <input type="text" name="q">
+    <button>Search reddit</button>
+</form>
+
+<h2>Checkboxes, radio buttons, select</h2>
+<p>create the form then inside the input write type = checkbox and give any name to it.
+</p>
+<p>and for the radio butttens like check only one of them. Write type = radio and name should be 
+    equal for every name because only one will be right.
+</p>
+<p>select - elemnt to select from given options the syntax is select and option</p>
+
+<form action="/shubh">
+    <input type="checkbox" name="agree to terms and conditions" id="agree">
+    <label for="agree">I agree</label>
+    <p>
+        <label for="small">small: </label>
+        <input type="radio" name="size" id="small" value="s"><br>
+        <label for="medium">medium: </label>
+        <input type="radio" name="size" id="medium" value="m"><br>
+        <label for="large">large: </label>
+        <input type="radio" name="size" id="large" value="l"><br>
+    </p>
+    <p>
+        <label for="">Please select the dress color</label>
+        <select name="color" id="dress color">
+        <option value="">--please choose an options</option>
+        <option value="red">red</option>
+        <option value="black">black</option>
+        <option value="green">green</option>
+        <option value="white">white</option>
+    </select></p>
+    <p>
+        <label for="volume">volume</label>
+        <input type="range" name="vol" min="0" max="100" step="10" value="20" id="volume">
+    </p>
+    <p>volume is an input function name we can choose any range function and show it like above.</p>
+    <p>id and labels "for" need to be same in order to click on name and to get access to edit.</p>
+    <p>Step- is how many steps it will go un time.</p>
+    <p>value--  is the default value of the function.</p>
+
+    <p>
+        <label for="type in"> tell me about yourself</label>
+        <textarea name="type something" id="type in" cols="30" rows="10" placeholder="type here"></textarea>
+    </p>
+
+
+    <button>submit</button>
+
+</form>
+<h2>validations</h2>
+<p>if we add required in input then we can not leave input blank.</p>
+<form action="/dummy">
+    <label for="first">first name</label>
+    <input type="text" name="first" id="first" required>
+    <button>submit</button>
+</form>
+<p>there are also some other input attributes such as --</p>
+<p>minlength and maxlength for text input ranges</p>
+<form action="/dummmy">
+    <label for="password">enter password</label>
+    <input type="password" name="password" id="password" minlength="8" maxlength="20"  required>
+    <button>submit</button>
+</form>
+<p>there are many more to explore for read go to HTML page above.</p>
+
+<h3>Pseudo Classes</h3>
+<p>Keyword added to a selector that specifies a special state of the selected elements</p>
+<ul>
+    <li>:active --> to specify whether it's in work. can done by changing the color of the button.</li>
+    <li>:checked</li>
+    <li>:first</li>
+    <li>:first-child</li>
+    <li>hover --> to hover over by clicking and if it's changes it's color or any thing changes then its hovering.</li>
+    <li>not()</li>
+    <li>nth-child()</li>
+    <li>nth-of-type()--> define n [e.g.2,3 or 4]in the bracket where you wanna see the change. or if we give 2n or 3n then then it will change in every 2nd or 3rd line respectively. </li>
+</ul>
+
+<h4>
+nth of type syntax for odd and even.
+<p>
+    div:nth-of-type(odd){<br>
+        background-color: red;<br>
+    } <br>
+    div:nth-of-type(even){<br>
+        background-color: black;<br>
+    } <br>
+</p>
+</h4>
+<h3>Pseudo elements</h3>
+<p>::first-letter --> with double columns we can modify the text
+</p>
+<p>first-line --> same as above</p>
+<p>::after</p>
+<p>::before</p>
+<p>selector</p>
+<h4>order matters in CSS</h4>
+
+<h2>Specificity</h2>
+<p>Specificity is how the browser decides which rules to apply 
+    when multiple rules could apply to the same element </p>
+    <p>It is the measure of how specific a given selector is the 
+        more specific selector wins the game.
+    </p>
+    <h3>in Specificity --> ID > CLASS > ELEMENT</h3>
+    <p>Look at them as left to right and assign any number from left to right
+        if there are 2 elements and compairing to 1 ID then it would be
+        as '002' and '100' clearly '100>002' and mark the numbera
+        as many items any ID, Class or selectors occur so ID are more 
+        powerful than the class and class is more powerful than the element.
+
+    </p>
+    <h4>Check specificty calucalator in google to check specificity.</h4>
+
+    <h3>Inline Styles are most specific that we define in html file but are not recommended to use.</h3>
+    <h3>!important --> is the exceptionally by defining as '!important'-at the end, most specific the 
+        browser will take care.
+    </h3>
+    <h2>Inherit</h2>
+    <p>if we mention inherit in any of the css file such as 
+        'color: inherit' -- then it will take the color of the upper part
+        of css as we defined earlier in the section.
+    </p>
+
+    <h2>Bordering </h2>
+    <p>There are many attributes for bordering --look in the mdn site</p>
+    <p><ul>
+        <li>
+            border-width
+        </li>
+        <li>
+            border-color
+        </li>
+        <li>border-style</li>
+
+    </ul></p>
+    <p>if we set 'box-sizing:border-box' then it will not increase the border size
+        but it will fit in the area and if we did not mention explixitly then 
+    it will take border width area additionaly </p>
+
+    <h2>e.g.</h2>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bordering</title>
+    </head>
+    <body>
+        <div id="one">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis nulla sequi totam voluptatem beatae soluta deleniti, necessitatibus minima, dignissimos magni suscipit cum sunt repellendus voluptas! Facilis dolores alias sit.
+
+        </div>
+        <div id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero, veniam nulla dicta nemo, cum tenetur ex temporibus eum reiciendis repellat vitae quidem quasi asperiores excepturi consectetur sapiente inventore amet.
+
+        </div>
+        <div id="three">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, placeat hic. Aut hic voluptas doloribus omnis culpa illo quidem ipsum nobis laborum atque cupiditate, nam, dolorum temporibus cum dolorem minima?
+
+        </div>
+    </body>
+    </html>
+
+<p>we can set the borders preference in one go e.g.
+    as in following order -->'border: #width | #style |#color'---->
+    "border: medium solid green"
+</p>
+
+<h3>Padding</h3>
+<p>Padding is used to add some extra space  the distance between context to border area.</p>
+<p>we can use padding as 'padding: 10px --> will increase in every direction
+
+</p>
+<p>most common order for padding is --> clockwise--top|right|bottom|left</p>
+<h3>Marging</h3>
+<p>spacing outside the border. same as padding and rules are also same.</p>
+
+<h2>Display</h2>
+<h4>Inline</h4>
+<p>Widht and height are ignored. margin and padding push elements awayhorizontally but not vertically
+
+</p>
+<h4>Block</h4>
+<p>Block elements break the flow of a document. width, height, margin, and padding are respected.
+
+</p>
+<h4>Inline-Block</h4>
+<p>Behave like a inline element except width, height, margin and padding are respected.</p>
+<h2>e.g.-- Inline-block</h2>
+<h5>I am a display example1</h5>
+<h5>I am a display example2</h5>
+<h5>I am a display example3</h5>
+
+<h2>EM's and REM's</h2>
+<h3>rem</h3>
+<p>Relative to the root HTML elements font-size. </p>
+<p>if the root font size is 20px, 1 rem is always 20px, 2rem = 40px.</p>
+<h3>em</h3>
+<p>with the font size, 1em equals to the font-size of the parent 
+    , 2em is twice the font size of the parent.
+</p>
+<p>With other properties, 1em is equal to the computed font size of the element itself.</p>
+
+
+<h2>Alpha channel and Opacity</h2>
+<p>It is a transparency tool if we want to insert different colors on top of the 
+    other colors. 
+</p>
+<p>Alpha is between 0 to 1 --> 0 is fully transparent and 1 is not transparent at all. any mid value be partially transparable.</p>
+<p>alpha will not affect the text color while inserting</p>
+<p>But Opacity will affect the text color as the parent background color. </p>
+
+
+<h2>Position Property</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"> Click me! </a>to get the web page for info anout the postion property</p>
+<p>It is basically about the certain nav bars or blocks and about theor behavious in the web page.
+
+</p>
+<p><ul>
+    <li>
+        Absolute
+    </li>
+    <li>fixed</li>
+    <li>sticky</li>
+    <li>Relative</li>
+    <li>Static</li>
+</ul></p>
+
+<h2>Transition Properties</h2>
+<p> <button><a href="https://easings.net/">easing examples</a></button></p>
+<p><button><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">transition! </a></button> click</p>
+<p>Transition has four attributes</p>
+<p><ul>
+    <li>
+        Property name - e.g. Margin-right, margin-left
+    </li>
+    <li>
+        Duration - time for the transition.
+    </li>
+    <li>
+        Timing Functions - e.g. ease-in, ease-out, linear -- in transition.
+    </li>
+    <li>
+        Delay - time after which transition will eexecute.
+    </li>
+</ul></p>
+
+<h2>Transform</h2>
+<p>A very Powerful tool in CSS to annotate things.</p>
+<p>
+    <button>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">click!
+         </a>
+    </button>
+         for more info
+</p>
+<p>Some common properties about the transform
+    <ul>
+        <li>transform: rotate(45deg) // provide any angle or turn-- there are Options to rotate such as X, Y,Z, 3D</li>
+        <li>translate</li>
+        <li>scale</li>
+        <li>skew</li>
+        <li>e.g- to do evrything in a line by single spacing---transform: tanslateX(10px) rotate(360deg) translateY(5px)</li>
+    </ul>
+</p>
+
+<h2>Google Fonts</h2>
+<p><button><a href="https://fonts.google.com/">Check Fonts</a></button> check it out.</p>
+<p>Google fonts are free and easy to use font-family resources and to visualize</p>
+<p>just click on add in the font and look for the embed -- then copy the link 
+    to your HTML page and copy the font family to CSS page.
+</p>
+
+<h2>Flexbox</h2>
+<button><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Click me!</a></button>
+<p>Flexbox is a one dimensional layout method for laying out items in rows or columns</p>
+<p>Flexbox allows us to distribute space dynamically across elelments of an unknown size hence the term 'flex'</p>
+<p><ul>
+    <li>
+        Flex-basis - Defines the initial size of an element before additional space is distributed.
+    </li>
+    <li>
+        Flex-grow-- controls the amount of available space an element should take up accepts a unit-less number value.
+    </li>
+    <li>
+        flex-shrink--if items are larger than the container, they shrink according to the flex shrink.
+    </li>
+</ul></p>
+<h3>Flex -- Short-hand</h3>
+<p>we can directly use flex and pass out the resp. value it has three forms--</p>
+<p>1 - giving 3 value -- flex--- flex-grow | flex-shrink | flex-basis</p>
+<p>Giving 2 values-- flex-- flex-grow | flex-shrink</p>
+<p>1 and default value is grow.</p>
+
+<h2>Media Queries</h2>
+<button><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Media_Queries</a></button>
+<p>Media queries allows us to modify our styles depending on particular parameters like screen width or device type.</p>
+
+
+
+
+
+</body>
+</html>

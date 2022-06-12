@@ -1,0 +1,137 @@
+h1{
+    color: green;
+    text-align: center;
+    text-decoration: black underline;
+    text-decoration-color: black;
+    text-shadow: 1000cm;
+    font-size:80px;;
+    font-weight: 10px;
+    font-display:inherit;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-family: fantasy;
+    background-image: url("https://images.unsplash.com/photo-1654624745126-298502155c69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-size: cover;
+    background-position: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px black;
+    
+}
+h2{
+    color: purple;
+}
+p{
+    color: green;
+   
+}
+form{
+    color:brown;
+    
+}
+button{
+    color: blueviolet;
+    background-color: burlywood;
+    backface-visibility: visible;  
+}
+li{
+    color: black;
+  
+}
+tbody{
+    color:black;
+}
+
+body{
+    background-color:antiquewhite ;
+}
+
+h3{
+    color:chocolate
+}
+
+h3 + form{
+    background-color: rgb(36, 17, 54);
+}
+h3 > form{
+    color: aquamarine;
+}
+input + button {
+    background-color: rgb(4, 204, 137);
+}
+input > button{
+    background-color: chocolate;
+}
+input[type="password"]{
+    background-color: rgb(138, 105, 82);
+}
+form > input{
+    color: rgb(180, 80, 37);
+}
+
+li:hover{
+    background-color: rgb(191, 147, 232);
+    color: rgb(175, 8, 8);
+}
+
+
+h1:hover{
+    box-shadow: 0 0.5em 0.5em -0.5em #dc1919 ;
+    transform: translateY(-0.05em);
+    color: red;
+    border: 5px;
+    border-color: black;
+    cursor: pointer;
+}
+
+
+div:hover{
+    background-color: rgb(154, 93, 14);
+    color: rgb(4, 13, 137);
+}
+#one{
+    width: 300px;
+    height: 150px;
+    background-color: blueviolet;
+    border-width: 6px;
+    border-color: black;
+    border-style: solid;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-left-color: rgb(128, 0, 0);
+    
+
+}
+#two{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(151, 103, 197);
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+#three{
+    width: 300px;
+    height: 150px;
+    border: 5px solid rgb(193, 0, 0);
+}
+h5{
+    background-color: aquamarine;
+    border: 3px solid;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+
+    ;
+}
+
+
+
+
+
